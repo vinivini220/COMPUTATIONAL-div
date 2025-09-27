@@ -7,10 +7,10 @@ const TrialMap = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Trial Map
+             Map
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            GP practices participating in the COMPUTATIONAL trial across England
+            GP practices participating in the COMPUTATIONAL across England
           </p>
         </div>
         
@@ -60,7 +60,7 @@ const TrialMap = () => {
                 </h4>
                 <p className="text-sm text-muted-foreground">
                   Detailed map showing participating GP practice locations 
-                  will be available during the trial recruitment phase
+                  will be available during the  recruitment phase
                 </p>
               </Card>
             </div>
