@@ -14,5 +14,5 @@ export default defineConfig(({ mode }) => ({
     },
   },
   // Set base path based on deployment platform
-  base: mode === "github" ? "/computa-renal-care/" : "/",
+  base: mode === "github" ? "/COMPUTATIONAL-div/" : "/",
 }));
