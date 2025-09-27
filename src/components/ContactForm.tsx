@@ -107,7 +107,7 @@ const ContactForm = () => {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            placeholder="Trial Participation Inquiry"
+            placeholder="Participation Inquiry"
             required
             className="bg-background/50"
           />

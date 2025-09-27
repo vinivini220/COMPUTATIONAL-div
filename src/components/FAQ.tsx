@@ -10,12 +10,12 @@ import { Card } from '@/components/ui/card';
 const FAQ = () => {
   const faqs = [
     {
-      question: "What is the COMPUTATIONAL trial?",
-      answer: "The COMPUTATIONAL trial is a primary care-based cluster randomised trial investigating personalised renal function monitoring and interventions in people living with heart failure. It aims to improve patient outcomes through data-driven healthcare approaches."
+      question: "What is the COMPUTATIONAL",
+      answer: "The COMPUTATIONAL is a primary care-based cluster randomised investigating personalised renal function monitoring and interventions in people living with heart failure. It aims to improve patient outcomes through data-driven healthcare approaches."
     },
     {
       question: "How many GP practices are participating?",
-      answer: "The trial involves 200 GP practices across the UK, with approximately 20,000 patients participating over an 18-month follow-up period."
+      answer: "The involves 200 GP practices across the UK, with approximately 20,000 patients participating over an 18-month follow-up period."
     },
     {
       question: "What are the eligibility criteria for GP practices?",
@@ -54,7 +54,7 @@ const FAQ = () => {
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Common questions about the COMPUTATIONAL trial and participation requirements
+            Common questions about the COMPUTATIONAL  and participation requirements
           </p>
         </div>
 

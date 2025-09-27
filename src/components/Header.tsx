@@ -18,7 +18,7 @@ const Header = () => {
   const navigationItems = [
     { label: 'Home', id: 'hero' },
     { label: 'Background', id: 'background' },
-    { label: 'Trial Summary', id: 'trial-summary' },
+    { label: 'Summary', id: 'trial-summary' },
     { label: 'Objectives', id: 'objectives' },
     { label: 'Resources', id: 'resources' },
     { label: 'Map', id: 'map' },

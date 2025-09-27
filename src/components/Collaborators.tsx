@@ -7,13 +7,13 @@ const Collaborators = () => {
       name: "University of Liverpool",
       role: "Lead Institution & Sponsor",
       website: "https://www.liverpool.ac.uk/",
-      description: "Primary research institution leading the COMPUTATIONAL trial"
+      description: "Primary research institution leading the COMPUTATIONAL"
     },
     {
-      name: "Liverpool Clinical Trials Centre (LCTC)",
-      role: "Trial Management",  
+      name: "Liverpool Clinical Centre (LCTC)",
+      role: "Management",  
       website: "https://www.liverpool.ac.uk/lctc/",
-      description: "Clinical trials coordination and data management"
+      description: "Clinical coordination and data management"
     },
     {
       name: "NIHR",

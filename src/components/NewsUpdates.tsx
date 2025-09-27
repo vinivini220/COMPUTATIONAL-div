@@ -9,7 +9,7 @@ const NewsUpdates = () => {
       date: "2024-03-15",
       title: "COMPUTATIONAL Recruitment Milestone Reached",
       category: "Milestone",
-      excerpt: "We are pleased to announce that 150 GP practices have now joined the COMPUTATIONAL trial, representing 75% of our recruitment target.",
+      excerpt: "We are pleased to announce that 150 GP practices have now joined the COMPUTATIONAL, representing 75% of our recruitment target.",
       link: "#"
     },
     {
@@ -30,7 +30,7 @@ const NewsUpdates = () => {
       date: "2024-01-22",
       title: "COMPUTATIONAL Protocol Published",
       category: "Publication",
-      excerpt: "The full trial protocol has been published in the British Journal of General Practice, providing transparency in our methodology.",
+      excerpt: "The full protocol has been published in the British Journal of General Practice, providing transparency in our methodology.",
       link: "#"
     }
   ];
@@ -56,7 +56,7 @@ const NewsUpdates = () => {
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Stay informed about the latest developments in the COMPUTATIONAL trial
+            Stay informed about the latest developments in the COMPUTATIONAL
           </p>
         </div>
 

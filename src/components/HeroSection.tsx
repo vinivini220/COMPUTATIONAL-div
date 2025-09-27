@@ -23,7 +23,7 @@ const HeroSection = () => {
           
           <div className="max-w-4xl mx-auto mb-8">
             <h2 className="text-xl md:text-2xl text-foreground leading-relaxed">
-              A primary care-based cluster randomised trial of personalised renal function 
+              A primary care-based cluster randomised of personalised renal function 
               monitoring and interventions in people living with heart failure
             </h2>
           </div>

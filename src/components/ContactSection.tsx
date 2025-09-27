@@ -21,7 +21,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: "Address", 
-      value: "University of Liverpool, Liverpool Clinical Trials Centre, Liverpool, L69 3GL",
+      value: "University of Liverpool, Liverpool Clinical Centre, Liverpool, L69 3GL",
       href: null
     },
     {
@@ -46,7 +46,7 @@ const ContactSection = () => {
             Contact Us
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Get in touch with the COMPUTATIONAL trial team for questions about participation, 
+            Get in touch with the COMPUTATIONAL team for questions about participation, 
             research findings, or general inquiries
           </p>
         </div>

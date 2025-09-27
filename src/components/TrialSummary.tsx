@@ -21,7 +21,7 @@ const TrialSummary = () => {
     {
       icon: Clock,
       title: "Comprehensive Monitoring",
-      description: "18-month trial period with PROMs collected at baseline, 6 and 18 months"
+      description: "18-month period with PROMs collected at baseline, 6 and 18 months"
     }
   ];
 
