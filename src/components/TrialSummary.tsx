@@ -15,7 +15,7 @@ const TrialSummary = () => {
     },
     {
       icon: Activity,
-      title: "Randomised Trial",
+      title: "Randomised",
       description: "100 centres using prediction model vs. 100 centres with standard care"
     },
     {
@@ -36,12 +36,12 @@ const TrialSummary = () => {
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-12 fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Trial Summary
+             Summary
           </h2>
           
           <div className="max-w-4xl mx-auto text-lg text-muted-foreground leading-relaxed space-y-4">
             <p>
-              The COMPUTATIONAL trial will explore the clinical and cost-effectiveness of a 
+              The COMPUTATIONAL will explore the clinical and cost-effectiveness of a 
               personalised renal function monitoring algorithm, designed to prevent hospital 
               admissions due to renal impairment without worsening heart failure outcomes.
             </p>
@@ -84,7 +84,7 @@ const TrialSummary = () => {
             <p className="text-muted-foreground">
               <span className="font-semibold text-primary">Study Design:</span> We will recruit 200 GP practices 
               across England that use the OPTUM (EMIS) system, evaluating around 20,000 patients. 
-              The trial will run for 18 months, in line with National Institute for Health and Care 
+              The  will run for 18 months, in line with National Institute for Health and Care 
               Excellence (NICE) guidelines and current standards of care.
             </p>
           </div>

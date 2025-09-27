@@ -7,7 +7,7 @@ const NewsUpdates = () => {
   const updates = [
     {
       date: "2024-03-15",
-      title: "COMPUTATIONAL Trial Recruitment Milestone Reached",
+      title: "COMPUTATIONAL Recruitment Milestone Reached",
       category: "Milestone",
       excerpt: "We are pleased to announce that 150 GP practices have now joined the COMPUTATIONAL trial, representing 75% of our recruitment target.",
       link: "#"
