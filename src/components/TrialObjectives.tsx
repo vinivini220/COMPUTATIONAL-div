@@ -23,7 +23,7 @@ const TrialObjectives = () => {
     {
       type: "Economic Objective",
       icon: TrendingUp,
-      color: "success",
+      color: "accent",
       items: [
         "To estimate the cost-effectiveness of personalised renal function monitoring in comparison to standard care"
       ]
