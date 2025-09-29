@@ -1,3 +1,5 @@
+// src/pages/Index.tsx
+import React from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import QuickInfoCards from '@/components/QuickInfoCards';
@@ -7,21 +9,29 @@ import TrialObjectives from '@/components/TrialObjectives';
 import ResearchersSection from '@/components/ResearchersSection';
 import TrialMap from '@/components/TrialMap';
 import Collaborators from '@/components/Collaborators';
-import FAQ from '@/components/FAQ';
 import NewsUpdates from '@/components/NewsUpdates';
+import FAQ from '@/components/FAQ';
+import CookiesBanner from '@/components/CookiesBanner';
 import ContactSection from '@/components/ContactSection';
-import CookiesBanner from '@/components/cookiesBanner';
 import { Card } from '@/components/ui/card';
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
     <>
       <Header />
+
       <main className="min-h-screen bg-background pt-16">
+        {/* Hero */}
         <HeroSection />
+
+        {/* Quick Info Cards */}
         <QuickInfoCards />
+
+        {/* Background Section */}
         <BackgroundSection />
-        <TrialSummary />    
+
+        {/* Trial Summary & Objectives */}
+        <TrialSummary />
         <TrialObjectives />
 
         {/* Randomisation / IMP Management System Panel */}
@@ -30,18 +40,29 @@ const Index = () => {
             Randomisation System / IMP Management System
           </h3>
           <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
-            The Randomisation System ensures fair allocation of participants across study arms. 
-            The IMP Management System monitors and tracks Investigational Medicinal Products 
+            The Randomisation System ensures fair allocation of participants across study arms.
+            The IMP Management System monitors and tracks Investigational Medicinal Products
             throughout the trial to maintain compliance and patient safety.
           </p>
         </Card>
 
+        {/* Researchers */}
         <ResearchersSection />
+
+        {/* Map */}
         <TrialMap />
+
+        {/* Collaborators */}
         <Collaborators />
+
+        {/* News & FAQ */}
         <NewsUpdates />
         <FAQ />
+
+        {/* Cookies */}
         <CookiesBanner />
+
+        {/* Contact Section */}
         <ContactSection />
       </main>
     </>
