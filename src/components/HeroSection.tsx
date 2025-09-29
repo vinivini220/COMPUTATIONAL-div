@@ -44,7 +44,7 @@ const HeroSection = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className={`${card.bg} rounded-lg p-4 ${card.border} transition-transform duration-300 cursor-pointer`}
+              className={`${card.bg} rounded-lg p-3 ${card.border} transition-transform duration-300 cursor-pointer`}
             >
               <div className={`font-semibold text-lg ${card.text} mb-1`}>{card.title}</div>
               <div className="text-foreground">{card.value}</div>
