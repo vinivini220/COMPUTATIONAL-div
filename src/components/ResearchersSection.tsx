@@ -68,12 +68,7 @@ const ResearchersSection = () => {
         
         <div className="text-center">
           <Card className="inline-block p-8 bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
-            {/* <div className="flex items-center justify-center gap-3 mb-4">
-              <Lock className="w-6 h-6 text-primary" />
-              <h3 className="text-xl font-semibold text-foreground">
-                Secure Access Portal
-              </h3>
-            </div> */}
+            
             
             <p className="text-muted-foreground mb-6 max-w-md">
               Training videos and documentation are available to participating GP practices 
