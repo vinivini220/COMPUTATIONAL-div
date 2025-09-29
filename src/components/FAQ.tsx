@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Card } from '@/components/ui/card';
+import { Mail, Phone, MapPin, Clock, Facebook, Twitter, Linkedin, ChevronUp } from 'lucide-react';
 
 const FAQ = () => {
   const faqs = [
@@ -43,44 +44,8 @@ const FAQ = () => {
     }
   ];
 
-  return (
-    <section className="medical-section" id="faq">
-      <div className="relative z-10 max-w-4xl mx-auto">
-        <div className="text-center mb-12 fade-in-up">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <HelpCircle className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Frequently Asked Questions
-            </h2>
-          </div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Common questions about the COMPUTATIONAL  and participation requirements
-          </p>
-        </div>
-
-        <Card className="p-8 bg-card/95 backdrop-blur-sm">
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
-                value={`item-${index}`}
-                className="border border-border/50 rounded-lg px-6 medical-transition hover:shadow-md"
-              >
-                <AccordionTrigger className="text-left hover:no-underline py-6">
-                  <span className="font-semibold text-foreground pr-4">
-                    {faq.question}
-                  </span>
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </Card>
-      </div>
-    </section>
-  );
+ 
 };
+
 
 export default FAQ;

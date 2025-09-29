@@ -55,7 +55,7 @@ const TrialObjectives = () => {
             return (
               <Card 
                 key={index}
-                className="p-6 medical-transition hover:shadow-lg fade-in-up"
+                className="p-6 medical-transition  fade-in-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="flex items-center gap-3 mb-6">

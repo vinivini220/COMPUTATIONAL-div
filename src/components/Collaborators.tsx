@@ -52,12 +52,14 @@ const Collaborators = () => {
           {collaborators.map((collaborator, index) => (
             <Card 
               key={index}
-              className="p-6 medical-transition hover:shadow-lg group fade-in-up"
+              className="p-6 medical-transition" 
+              // hover:shadow-lg group fade-in-up
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-foreground mb-1 group-hover:text-primary medical-transition">
+                  <h3 className="text-lg font-semibold text-foreground mb-1"> 
+                    {/* group-hover:text-primary medical-transition */}
                     {collaborator.name}
                   </h3>
                   <div className="text-sm text-primary font-medium mb-2">
@@ -68,8 +70,9 @@ const Collaborators = () => {
                   href={collaborator.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary medical-transition"
-                >
+                  className="text-muted-foreground">
+                  {/* hover:text-primary medical-transition */}
+                
                   <ExternalLink className="w-5 h-5" />
                 </a>
               </div>

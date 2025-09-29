@@ -1,10 +1,10 @@
-import { Mail, Phone, MapPin, Clock, Facebook, Twitter, Linkedin, ChevronUp } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, ChevronUp } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import ContactForm from '@/components/ContactForm';
 import contactImage from '@/assets/contact-medical.jpg';
 import { useState, useEffect } from 'react';
 
-const ContactSection = () => {
+const ContactSection: React.FC = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
 
   // Show back-to-top button after scroll
@@ -28,6 +28,7 @@ const ContactSection = () => {
 
   return (
     <>
+      {/* Contact Section */}
       <section id="contact" className="medical-section relative">
         <div 
           className="section-background absolute inset-0 bg-cover bg-center"
@@ -51,9 +52,9 @@ const ContactSection = () => {
               {contactInfo.map((item, index) => {
                 const Icon = item.icon;
                 const content = (
-                  <Card className="p-6 hover:shadow-xl group transition-all duration-300 transform hover:scale-[1.03]">
+                  <Card className="p-6 group transition-all duration-300 transform">
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 transition">
                         <Icon className="w-6 h-6 text-primary" />
                       </div>
                       
@@ -77,38 +78,58 @@ const ContactSection = () => {
 
       {/* Footer Section */}
       <footer className="bg-gradient-to-r from-red-600 via-red-700 to-red-800 text-white py-10 relative z-20 fade-in-up">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-          {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-bold mb-3">Contact</h4>
-            <p>Email: <a href="mailto:computational@liverpool.ac.uk" className="underline">computational@liverpool.ac.uk</a></p>
-            <p>Phone: <a href="tel:+441517945588" className="underline">+44 (0) 151 794 5588</a></p>
-            <p>Address: University of Liverpool, Liverpool Clinical Centre, L69 3GL</p>
-          </div>
+  <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+    
+    {/* Contact Info */}
+    <div>
+      <h4 className="text-lg font-bold mb-3">Contact</h4>
+      <p>Email: <a href="mailto:computational@liverpool.ac.uk" className="underline">computational@liverpool.ac.uk</a></p>
+      <p>Phone: <a href="tel:+441517945588" className="underline">+44 (0) 151 794 5588</a></p>
+      <p>Address: University of Liverpool, Liverpool Clinical Centre, L69 3GL</p>
+    </div>
 
-          {/* Social Links */}
-          <div className="flex flex-col items-start md:items-center">
-            <h4 className="text-lg font-bold mb-3">Follow Us</h4>
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-yellow-300 transition"><Facebook className="w-6 h-6" /></a>
-              <a href="#" className="hover:text-yellow-300 transition"><Twitter className="w-6 h-6" /></a>
-              <a href="#" className="hover:text-yellow-300 transition"><Linkedin className="w-6 h-6" /></a>
-            </div>
-          </div>
+    {/* Quick Links */}
+    <div>
+      <h4 className="text-lg font-bold mb-3">Quick Links</h4>
+      <ul className="space-y-1 text-sm">
+        <li><a href="#hero" className="underline hover:text-gray-200 transition">Home</a></li>
+        <li><a href="#trial-summary" className="underline hover:text-gray-200 transition">Summary</a></li>
+        <li><a href="#map" className="underline hover:text-gray-200 transition">Map</a></li>
+        <li><a href="#contact" className="underline hover:text-gray-200 transition">Contact</a></li>
+      </ul>
+    </div>
 
-          {/* Copyright */}
-          <div className="flex flex-col items-start md:items-end justify-end">
-            <p className="text-sm">&copy; {new Date().getFullYear()} Computational Study. All rights reserved.</p>
-            <p className="text-sm">Designed by University of Liverpool</p>
-          </div>
-        </div>
-      </footer>
+    {/* Newsletter Signup */}
+    <div>
+      <h4 className="text-lg font-bold mb-3">Newsletter</h4>
+      <p className="text-sm mb-3">Subscribe to get latest updates about the study.</p>
+      <form className="flex flex-col space-y-2">
+        <input 
+          type="email" 
+          placeholder="Your email" 
+          className="px-3 py-2 rounded-md text-black focus:outline-none"
+        />
+        <button type="submit" className="bg-white text-red-700 px-4 py-2 rounded-md font-semibold hover:bg-gray-200 transition">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+    {/* Copyright / Designed by */}
+    <div className="flex flex-col items-start md:items-end justify-end">
+      <p className="text-sm">&copy; {new Date().getFullYear()} Computational Study. All rights reserved.</p>
+      <p className="text-sm">Designed by University of Liverpool</p>
+    </div>
+
+  </div>
+</footer>
+
 
       {/* Back-to-Top Button */}
       {showTopBtn && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-red-600 hover:bg-red-700 text-white p-3 rounded-full shadow-lg transition-all z-50"
+          className="fixed bottom-6 right-6 bg-red-600 text-white p-3 rounded-full shadow-lg transition-all z-50"
         >
           <ChevronUp className="w-6 h-6" />
         </button>

@@ -45,77 +45,77 @@ const NewsUpdates = () => {
     }
   };
 
-  return (
-    <section className="medical-section bg-muted/30" id="news">
-      <div className="relative z-10 max-w-6xl mx-auto">
-        <div className="text-center mb-12 fade-in-up">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <Newspaper className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Latest Updates
-            </h2>
-          </div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Stay informed about the latest developments in the COMPUTATIONAL
-          </p>
-        </div>
+  // return (
+  //   <section className="medical-section bg-muted/30" id="news">
+  //     <div className="relative z-10 max-w-6xl mx-auto">
+  //       <div className="text-center mb-12 fade-in-up">
+  //         <div className="flex items-center justify-center gap-3 mb-6">
+  //           <Newspaper className="w-8 h-8 text-primary" />
+  //           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+  //             Latest Updates
+  //           </h2>
+  //         </div>
+  //         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+  //           Stay informed about the latest developments in the COMPUTATIONAL
+  //         </p>
+  //       </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {updates.map((update, index) => (
-            <Card 
-              key={index}
-              className="p-6 bg-card/95 backdrop-blur-sm medical-transition hover:shadow-lg fade-in-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="flex items-start justify-between mb-4">
-                <Badge 
-                  variant="outline" 
-                  className={getCategoryColor(update.category)}
-                >
-                  {update.category}
-                </Badge>
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <Calendar className="w-4 h-4 mr-1" />
-                  {new Date(update.date).toLocaleDateString('en-GB', {
-                    day: 'numeric',
-                    month: 'long',
-                    year: 'numeric'
-                  })}
-                </div>
-              </div>
+  //       <div className="grid md:grid-cols-2 gap-8">
+  //         {updates.map((update, index) => (
+  //           <Card 
+  //             key={index}
+  //             className="p-6 bg-card/95 backdrop-blur-sm medical-transition  fade-in-up"
+  //             style={{ animationDelay: `${index * 0.1}s` }}
+  //           >
+  //             <div className="flex items-start justify-between mb-4">
+  //               <Badge 
+  //                 variant="outline" 
+  //                 className={getCategoryColor(update.category)}
+  //               >
+  //                 {update.category}
+  //               </Badge>
+  //               <div className="flex items-center text-sm text-muted-foreground">
+  //                 <Calendar className="w-4 h-4 mr-1" />
+  //                 {new Date(update.date).toLocaleDateString('en-GB', {
+  //                   day: 'numeric',
+  //                   month: 'long',
+  //                   year: 'numeric'
+  //                 })}
+  //               </div>
+  //             </div>
 
-              <h3 className="text-xl font-semibold text-foreground mb-3">
-                {update.title}
-              </h3>
+  //             <h3 className="text-xl font-semibold text-foreground mb-3">
+  //               {update.title}
+  //             </h3>
 
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                {update.excerpt}
-              </p>
+  //             <p className="text-muted-foreground leading-relaxed mb-4">
+  //               {update.excerpt}
+  //             </p>
 
-              <Button 
-                variant="outline" 
-                size="sm"
-                className="medical-transition hover:scale-105"
-              >
-                Read More
-                <ExternalLink className="w-4 h-4 ml-2" />
-              </Button>
-            </Card>
-          ))}
-        </div>
+  //             <Button 
+  //               variant="outline" 
+  //               size="sm"
+  //               className="medical-transition"
+  //             >
+  //               Read More
+  //               <ExternalLink className="w-4 h-4 ml-2" />
+  //             </Button>
+  //           </Card>
+  //         ))}
+  //       </div>
 
-        <div className="text-center mt-12">
-          <Button 
-            variant="outline"
-            className="medical-transition hover:scale-105"
-          >
-            View All Updates
-            <ExternalLink className="w-4 h-4 ml-2" />
-          </Button>
-        </div>
-      </div>
-    </section>
-  );
+  //       <div className="text-center mt-12">
+  //         <Button 
+  //           variant="outline"
+  //           className="medical-transition"
+  //         >
+  //           View All Updates
+  //           <ExternalLink className="w-4 h-4 ml-2" />
+  //         </Button>
+  //       </div>
+  //     </div>
+  //   </section>
+  // );
 };
 
 export default NewsUpdates;

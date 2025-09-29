@@ -35,32 +35,32 @@ const TrialSummary = () => {
       
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-12 fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-             Summary
-          </h2>
-          
-          <div className="max-w-4xl mx-auto text-lg text-muted-foreground leading-relaxed space-y-4">
-            <p>
-              The COMPUTATIONAL will explore the clinical and cost-effectiveness of a 
-              personalised renal function monitoring algorithm, designed to prevent hospital 
-              admissions due to renal impairment without worsening heart failure outcomes.
-            </p>
-            
-            <p>
-              The algorithm, classed as a medical device, consists of a prediction model designed 
-              to tailor monitoring schedules, together with a decision tool that provides guidance 
-              on immediate interventions and recommendations for the primary care team.
-            </p>
-          </div>
-        </div>
-        
+  <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+    Trial Summary
+  </h2>
+  
+  <div className="max-w-4xl mx-auto text-lg text-muted-foreground leading-relaxed space-y-4">
+    <p>
+      The COMPUTATIONAL will explore the clinical and cost-effectiveness of a 
+      personalised renal function monitoring algorithm, designed to prevent hospital 
+      admissions due to renal impairment without worsening heart failure outcomes.
+    </p>
+    
+    <p>
+      The algorithm, classed as a medical device, consists of a prediction model designed 
+      to tailor monitoring schedules, together with a decision tool that provides guidance 
+      on immediate interventions and recommendations for the primary care team.
+    </p>
+  </div>
+</div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {highlights.map((highlight, index) => {
             const Icon = highlight.icon;
             return (
               <div 
                 key={index}
-                className="bg-card/80 backdrop-blur-sm rounded-xl p-6 border border-border medical-transition hover:shadow-lg fade-in-up"
+                className="bg-card/80 backdrop-blur-sm rounded-xl p-6 border border-border medical-transition  fade-in-up"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">

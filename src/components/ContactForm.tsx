@@ -63,7 +63,7 @@ const ContactForm = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Dr. John Smith"
+              placeholder=""
               required
               className="bg-background/50"
             />
@@ -79,7 +79,7 @@ const ContactForm = () => {
               type="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="john.smith@practice.nhs.uk"
+              placeholder=""
               required
               className="bg-background/50"
             />
@@ -94,7 +94,7 @@ const ContactForm = () => {
             name="organization"
             value={formData.organization}
             onChange={handleChange}
-            placeholder="Liverpool Medical Centre"
+            placeholder=""
             className="bg-background/50"
           />
         </div>
@@ -107,7 +107,7 @@ const ContactForm = () => {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            placeholder="Participation Inquiry"
+            placeholder=""
             required
             className="bg-background/50"
           />
@@ -121,7 +121,7 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Please provide details about your inquiry..."
+            placeholder=""
             required
             rows={5}
             className="bg-background/50 resize-none"
@@ -131,8 +131,9 @@ const ContactForm = () => {
         <Button 
           type="submit" 
           disabled={isSubmitting}
-          className="w-full medical-transition hover:scale-105"
-        >
+          className="w-full medical-transition">
+          {/* hover:scale-105 */}
+        
           {isSubmitting ? (
             "Sending..."
           ) : (
@@ -142,7 +143,11 @@ const ContactForm = () => {
             </>
           )}
         </Button>
+        
       </form>
+
+
+      
     </Card>
   );
 };

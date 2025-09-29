@@ -181,7 +181,8 @@ Medical color palette: Professional red, clean white, modern grey
   }
   
   .info-card {
-    @apply bg-card rounded-xl p-6 shadow-lg border border-border medical-transition hover:shadow-xl hover:-translate-y-1;
+    @apply bg-card rounded-xl p-6 shadow-lg border border-border medical-transition;
+     /* hover:shadow-xl hover:-translate-y-1; */
   }
   
   .medical-section {

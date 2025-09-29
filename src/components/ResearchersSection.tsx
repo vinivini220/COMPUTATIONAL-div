@@ -47,7 +47,7 @@ const ResearchersSection = () => {
             return (
               <Card 
                 key={index}
-                className="p-6 text-center bg-card/90 backdrop-blur-sm medical-transition hover:shadow-lg fade-in-up"
+                className="p-6 text-center bg-card/90 backdrop-blur-sm medical-transition  fade-in-up"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -68,19 +68,19 @@ const ResearchersSection = () => {
         
         <div className="text-center">
           <Card className="inline-block p-8 bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
-            <div className="flex items-center justify-center gap-3 mb-4">
+            {/* <div className="flex items-center justify-center gap-3 mb-4">
               <Lock className="w-6 h-6 text-primary" />
               <h3 className="text-xl font-semibold text-foreground">
                 Secure Access Portal
               </h3>
-            </div>
+            </div> */}
             
             <p className="text-muted-foreground mb-6 max-w-md">
               Training videos and documentation are available to participating GP practices 
               through our secure portal with credential-based access.
             </p>
             
-            <Button className="medical-transition hover:scale-105">
+            <Button className="medical-transition">
               Request Access Credentials
             </Button>
           </Card>

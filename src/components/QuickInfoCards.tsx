@@ -45,7 +45,7 @@ const QuickInfoCards = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 medical-transition">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center medical-transition">
                     <Icon className="w-8 h-8 text-primary" />
                   </div>
                 </div>
