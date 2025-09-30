@@ -20,16 +20,26 @@ const Header = () => {
   const navigationItems = [
     { label: 'Home', id: 'hero' },
     { label: 'Background', id: 'background' },
-    { label: 'Trial Summary', id: 'trial-summary' },
-    { label: 'Objectives', id: 'objectives' },
-    { label: 'Resources', id: 'resources' },
-    { label: 'Map', id: 'map' },
-    { label: 'Partners', id: 'collaborators' },
+    // { label: 'Trial Summary', id: 'trial-summary' },
+    // { label: 'Objectives', id: 'objectives' },
+    // { label: 'Resources', id: 'resources' },
+    // { label: 'Map', id: 'map' },
+    // { label: 'Partners', id: 'collaborators' },
     { label: 'Contact', id: 'contact' }
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-[10000] bg-background/95 backdrop-blur-sm border-b border-border">
+      <nav className="navbar pre-navbar flex justify-end items-end p-1 bg-red-400 ">
+        <div className="container flex gap-4 justify-end items-end">
+          <a href="#" className="font-medium hover:underline">
+            Randomisation System
+          </a>
+          <a href="#" className="font-medium hover:underline">
+            IMP Management System
+          </a>
+        </div>
+      </nav>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
