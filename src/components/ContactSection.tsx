@@ -119,10 +119,10 @@ const ContactSection: React.FC = () => {
         </div>
 
         {/* Copyright / Designed by */}
-        <div className="w-screen flex flex-row justify-center items-center p-4" >
+        <div className="w-full flex flex-row justify-center items-center p-4" >
           <p className="text-sm">&copy; {new Date().getFullYear()} Computational Study. All rights reserved.</p>
         </div>
-        <div className="w-screen flex flex-row justify-center items-center " >
+        <div className="w-full flex flex-row justify-center items-center " >
           <p className="text-sm">Designed by University of Liverpool</p>
         </div>
 
@@ -134,7 +134,7 @@ const ContactSection: React.FC = () => {
       {showTopBtn && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-red-600 text-white p-3 rounded-full shadow-lg transition-all z-50"
+          className="fixed bottom-6 right-6 bg-red-600 text-white p-3 rounded-full shadow-lg transition-all z-[10000]"
         >
           <ChevronUp className="w-6 h-6" />
         </button>

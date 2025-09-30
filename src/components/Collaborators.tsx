@@ -1,10 +1,11 @@
 import { ExternalLink } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import Collab1 from '@/assets/1.jpeg';
+import Collab1 from '@/assets/1.png';
 import Collab2 from '@/assets/2.jpeg';
-import Collab3 from '@/assets/3.jpeg';
+import Collab3 from '@/assets/3.png';
 import Collab4 from '@/assets/4.jpeg';
 import Collab5 from '@/assets/5.png';
+import Collab6 from '@/assets/6.jpg';
 
 
 const Collaborators = () => {
@@ -16,14 +17,13 @@ const Collaborators = () => {
       website: "https://www.liverpool.ac.uk/",
       description: "Primary research institution leading the COMPUTATIONAL"
     },
-    // {
-    //   img: Collab1,
-
-    //   name: "Liverpool Clinical Centre (LCTC)",
-    //   role: "Management",
-    //   website: "https://www.liverpool.ac.uk/lctc/",
-    //   description: "Clinical coordination and data management"
-    // },
+    {
+      img: Collab1,
+      name: "Liverpool Clinical Centre (LCTC)",
+      role: "Management",
+      website: "https://www.liverpool.ac.uk/lctc/",
+      description: "Clinical coordination and data management"
+    },
     {
       img: Collab4,
       name: "NIHR",
@@ -32,7 +32,7 @@ const Collaborators = () => {
       description: "National Institute for Health and Care Research funding"
     },
     {
-      img: Collab2,
+      img: Collab6,
       name: "Bangor University",
       role: "Research Partner",
       website: "https://www.bangor.ac.uk/",
@@ -48,7 +48,7 @@ const Collaborators = () => {
   ];
 
   return (
-      <section id="collaborators" className="medical-section bg-gradient-to-b from-background to-secondary/30">
+    <section id="collaborators" className="medical-section bg-gradient-to-b from-background to-secondary/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
@@ -71,7 +71,8 @@ const Collaborators = () => {
               <img
                 src={collaborator.img}
                 alt={collaborator.name}
-                className="w-full h-40 object-cover rounded-lg mb-4"
+                // height={"1536px"}
+                // width={"2048px"}
               />
 
               <div className="flex items-start justify-between mb-4">

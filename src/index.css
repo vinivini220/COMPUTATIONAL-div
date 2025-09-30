@@ -6,6 +6,9 @@
 All colors are HSL values for consistent theming across light/dark modes.
 Medical color palette: Professional red, clean white, modern grey
 */
+/* *{
+  outline: 1px solid yellow;
+} */
 
 @layer base {
   :root {

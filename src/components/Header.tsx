@@ -32,10 +32,10 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-[10000] bg-background/95 backdrop-blur-sm border-b border-border">
       <nav className="navbar pre-navbar flex justify-end items-end p-1 bg-red-400 ">
         <div className="container flex gap-4 justify-end items-end">
-          <a href="#" className="font-medium hover:underline">
+          <a href="#" className="font-medium text-sm text-white hover:underline">
             Randomisation System
           </a>
-          <a href="#" className="font-medium hover:underline">
+          <a href="#" className="font-medium text-sm text-white hover:underline">
             IMP Management System
           </a>
         </div>
